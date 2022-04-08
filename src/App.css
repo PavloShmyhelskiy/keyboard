@@ -1,0 +1,66 @@
+.App {
+  display: flex;
+  height: 100%;
+
+}
+
+.sidebar {
+  flex: 20%;
+  border-right: 1px solid white;
+  margin: 10px;
+}
+
+
+.main {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex: 80%;
+}
+
+.presets {
+  border-bottom: 1px solid white;
+}
+
+.preset, .group {
+  cursor: pointer;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+}
+
+.preset.active, .group.active {
+  text-decoration: underline;
+}
+
+.add-button {
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+
+.picker {
+  position: relative;
+  display: inline-block;
+}
+
+.swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.popover {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  border-radius: 9px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
